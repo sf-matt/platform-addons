@@ -1,1 +1,38 @@
-Test
+cluster_config:
+  name: kubernetes
+
+sysdig_endpoint:
+  region: app.us4.sysdig.com
+  access_key_existing_secret: sysdig-agent-secret
+
+# Features
+features:
+  kubernetes_metadata:
+    enabled: true
+
+  posture:
+    host_posture:
+      enabled: true
+    cluster_posture:
+      enabled: true
+
+  vulnerability_management:
+    host_vulnerability_management:
+      enabled: true
+    container_vulnerability_management:
+      enabled: true
+    in_use:
+      enabled: true
+
+  detections:
+    kubernetes_audit:
+      enabled: true
+    malware_control:
+      enabled: true
+
+  respond:
+    response_actions:
+      enabled: true
+
+host:
+  driver: universal_ebpf
