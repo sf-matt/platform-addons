@@ -2,7 +2,7 @@ cluster_config:
   name: kubernetes
 
 sysdig_endpoint:
-  region: app.us4.sysdig.com
+  region: us4
   access_key_existing_secret: sysdig-agent-secret
 
 # Features
