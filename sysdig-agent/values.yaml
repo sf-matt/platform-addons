@@ -4,8 +4,8 @@ cluster_config:
 sysdig_endpoint:
   region: us4
   access_key_existing_secret: sysdig-agent-secret
+# cluster_type: gke-autopilot # Uncomment if using GKE Autopilot
 
-# Features
 features:
   kubernetes_metadata:
     enabled: true
